@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -96,6 +92,66 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-korat-dark text-korat-text font-montserrat;
+    @apply overflow-x-hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container px-4 lg:px-8 mx-auto;
+  }
+  
+  .section-spacing {
+    @apply py-16 md:py-24;
+  }
+  
+  .heading-xl {
+    @apply text-4xl md:text-5xl lg:text-6xl font-light;
+  }
+  
+  .heading-lg {
+    @apply text-3xl md:text-4xl font-light;
+  }
+  
+  .heading-md {
+    @apply text-2xl md:text-3xl font-light;
+  }
+  
+  .gold-accent {
+    @apply text-korat-gold;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-2 border border-korat-gold text-korat-gold hover:bg-korat-gold hover:text-white 
+      transition-colors duration-300 uppercase text-sm tracking-wider;
+  }
+  
+  .animate-on-scroll {
+    opacity: 0;
+  }
+  
+  .animate-on-scroll.animate-active {
+    @apply animate-fade-in;
+  }
+
+  .stat-box {
+    @apply relative overflow-hidden border-r border-gray-800 last:border-0 p-6;
+  }
+
+  .stat-number {
+    @apply text-5xl md:text-6xl font-light mb-2 text-korat-gold;
+  }
+
+  .stat-label {
+    @apply text-sm text-gray-400 uppercase tracking-wider;
+  }
+
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
   }
 }
