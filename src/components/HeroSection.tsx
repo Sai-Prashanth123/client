@@ -26,7 +26,7 @@ export default function HeroSection() {
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{ 
-            backgroundImage: "url('/lovable-uploads/5d514cc9-be61-4cf4-ae15-4b447c01890d.png')", 
+            backgroundImage: "url('/lovable-uploads/a3f9300d-0518-40a1-b6df-a7b3c9b52ba8.png')", 
             transform: "scale(1.1)" 
           }}
         />
