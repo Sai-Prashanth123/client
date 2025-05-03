@@ -1,6 +1,7 @@
 
 import { useEffect } from 'react';
 import useInView from '@/hooks/useInView';
+import { Separator } from '@/components/ui/separator';
 
 export default function NetworkSection() {
   const [sectionRef, isInView] = useInView({ threshold: 0.1, triggerOnce: true });
@@ -9,49 +10,69 @@ export default function NetworkSection() {
     {
       id: "01",
       title: "Access Beyond the Market",
-      description: "Gain exclusive rights to off-market opportunities and pre-launch projects before they become publicly available, providing our investors with unparalleled first-mover advantages."
+      description: "Gain exclusive entry to off-market acquisitions and private listings, reserved for investors seeking rare, high-value opportunities unavailable to the general market."
     },
     {
       id: "02",
       title: "Wealth Preservation & Growth",
-      description: "Our properties are strategically selected in locations known for economic resilience, political stability, and consistent appreciation, ensuring both capital protection and impressive returns."
+      description: "A meticulously structured portfolio offering long-term appreciation, resilient asset performance, and consistently high returns, ensuring financial security across market cycles."
     },
     {
       id: "03",
       title: "Confidential & Personalized Advisory",
-      description: "Receive tailored investment recommendations crafted specifically for your financial goals, risk tolerance, and legacy planning aspirations by our dedicated team of advisors."
+      description: "Discreet, tailor-made investment strategies designed to align with your financial ambitions, ensuring seamless transactions and strategic wealth-building."
     },
     {
       id: "04",
       title: "Unmatched Expertise in Prime Real Estate",
-      description: "Leverage decades of collective expertise in identifying properties with exceptional investment potential in the world's most coveted markets and emerging luxury destinations."
+      description: "A dedicated team with deep market knowledge, providing exclusive insights and strategic guidance to secure generational wealth through high-value investments."
     }
   ];
 
   return (
-    <section className="section-spacing bg-korat-dark" ref={sectionRef}>
-      <div className="container-custom">
-        <div className="text-center mb-16">
-          <span className={`text-sm uppercase tracking-widest text-korat-gold ${isInView ? 'animate-fade-in' : 'opacity-0'}`}>
-            An Invitation to Exclusive Ownership
+    <section className="section-spacing bg-korat-dark" ref={sectionRef}
+      style={{
+        backgroundImage: "url('/lovable-uploads/c5597a2e-bde4-4330-b9a1-66fe533ce934.png')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        position: 'relative',
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+      
+      <div className="container-custom relative z-10">
+        <div className="text-center mb-14">
+          <span className={`text-sm uppercase tracking-widest text-gray-300 ${isInView ? 'animate-fade-in' : 'opacity-0'}`}>
+            WHY PARTNER WITH KORAT PROPERTIES?
           </span>
-          <h2 className={`heading-lg mt-2 max-w-3xl mx-auto ${isInView ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
+          <h2 className={`heading-lg mt-5 max-w-4xl mx-auto ${isInView ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
             A Private Network of Unrivaled Investment Opportunities
           </h2>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
           {benefits.map((benefit, index) => (
             <div 
               key={benefit.id} 
-              className={`bg-korat-darkGray p-8 ${isInView ? 'animate-fade-in' : 'opacity-0'}`}
+              className={`${isInView ? 'animate-fade-in' : 'opacity-0'}`}
               style={{ animationDelay: `${0.2 + index * 0.1}s` }}
             >
-              <span className="text-korat-gold text-xl mb-4 block">{benefit.id}</span>
-              <h3 className="text-xl font-light mb-4">{benefit.title}</h3>
-              <p className="text-gray-400 text-sm">
-                {benefit.description}
-              </p>
+              <div className="flex flex-col">
+                <div className="flex items-center mb-4">
+                  <span className="text-korat-gold text-xl md:text-2xl font-light mr-3">{benefit.id}</span>
+                  <h3 className="text-xl md:text-2xl font-light">{benefit.title}</h3>
+                </div>
+                <p className="text-gray-300 leading-relaxed">
+                  {benefit.description}
+                </p>
+              </div>
+              {index === 0 || index === 2 ? (
+                <div className="hidden md:block">
+                  <Separator className="my-8 bg-gray-600" />
+                </div>
+              ) : null}
             </div>
           ))}
         </div>

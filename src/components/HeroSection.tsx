@@ -33,15 +33,15 @@ export default function HeroSection() {
       </div>
       
       {/* Content */}
-      <div className="container-custom relative z-20 h-full flex flex-col justify-center">
+      <div className="container-custom relative z-20 h-full flex flex-col justify-center items-center text-center">
         <div className="max-w-3xl animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-light mb-6 text-center mx-auto">
+          <h1 className="text-5xl md:text-7xl font-light mb-6 text-center">
             <span className="text-white">KORAT</span>
             <span className="block text-sm text-center tracking-widest text-korat-gold mt-2">PROPERTIES</span>
           </h1>
           
-          <div className="mt-16 md:mt-24">
-            <h2 className="heading-lg text-center">
+          <div className="mt-16 md:mt-24 text-center">
+            <h2 className="heading-lg">
               Prestigious Properties, Reserved for<br />
               <span className="font-light">Visionary Investors</span>
             </h2>
