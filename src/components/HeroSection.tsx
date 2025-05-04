@@ -37,7 +37,7 @@ export default function HeroSection() {
         <div className="max-w-3xl animate-fade-in text-center">
           <h1 className="text-5xl md:text-7xl font-light mb-6 text-center">
             <span className="text-white">KORAT</span>
-            <span className="block text-sm text-center tracking-widest text-korat-gold mt-2">PROPERTIES</span>
+            <span className="block text-sm text-center tracking-widest text-korat-gold mt-2">Our Founder</span>
           </h1>
           
           <div className="mt-16 md:mt-24 text-center">

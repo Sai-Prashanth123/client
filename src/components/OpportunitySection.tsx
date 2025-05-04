@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import useInView from '@/hooks/useInView';
 
@@ -33,7 +32,7 @@ export default function OpportunitySection() {
           <div className={`relative h-[500px] ${isInView ? 'animate-fade-in-right' : 'opacity-0'}`} style={{ animationDelay: '0.3s' }}>
             <div className="absolute inset-0 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1582562124811-c09040d0a901" 
+                src="/Luxury Property.jpg" 
                 alt="Luxury Property" 
                 className="w-full h-full object-cover"
               />

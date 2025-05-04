@@ -76,25 +76,25 @@ export default function StatisticsSection() {
       value: 12, 
       suffix: "%", 
       description: "Annual rental yield - Among the world's highest returns.", 
-      bgImage: "/lovable-uploads/6df1960c-da53-4a71-b62b-4a00e0679d9d.png"
+      bgImage: "public/1.jpg"
     },
     { 
       value: 25, 
       suffix: "%", 
       description: "Five-year price growth - Sustained capital appreciation in key districts", 
-      bgImage: "/lovable-uploads/6df1960c-da53-4a71-b62b-4a00e0679d9d.png"
+      bgImage: "public/2.jpg"
     },
     { 
       value: 0, 
       suffix: "%", 
       description: "Property tax - No capital gains or inheritance tax.", 
-      bgImage: "/lovable-uploads/6df1960c-da53-4a71-b62b-4a00e0679d9d.png"
+      bgImage: "public/3.jpg"
     },
     { 
       value: 87, 
       suffix: "%", 
       description: "Expatriate population - with a demand for high-end real estate.", 
-      bgImage: "/lovable-uploads/6df1960c-da53-4a71-b62b-4a00e0679d9d.png"
+      bgImage: "public/4.jpg"
     }
   ];
   
@@ -103,25 +103,25 @@ export default function StatisticsSection() {
       value: 9, 
       suffix: "%", 
       description: "Annual rental yield in prime central London areas", 
-      bgImage: "/lovable-uploads/6df1960c-da53-4a71-b62b-4a00e0679d9d.png"
+      bgImage: "public/Uk-1.jpg"
     },
     { 
       value: 150, 
       suffix: "k", 
       description: "Minimum investment entry point (USD)", 
-      bgImage: "/lovable-uploads/6df1960c-da53-4a71-b62b-4a00e0679d9d.png"
+      bgImage: "public/uk-2.jpg"
     },
     { 
       value: 40, 
       suffix: "%", 
       description: "Projected 10-year capital growth in prime areas", 
-      bgImage: "/lovable-uploads/6df1960c-da53-4a71-b62b-4a00e0679d9d.png"
+      bgImage: "public/uk-3.jpg"
     },
     { 
       value: 3, 
       suffix: "", 
       description: "Global ranking for investment destination stability", 
-      bgImage: "/lovable-uploads/6df1960c-da53-4a71-b62b-4a00e0679d9d.png"
+      bgImage: "public/uk-4.jpg"
     }
   ];
 

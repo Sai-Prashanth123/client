@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import useInView from '@/hooks/useInView';
 import { Separator } from '@/components/ui/separator';
@@ -30,17 +29,18 @@ export default function NetworkSection() {
   ];
 
   return (
-    <section className="section-spacing bg-korat-dark" ref={sectionRef}
+    <section 
+      className="section-spacing relative" 
+      ref={sectionRef}
       style={{
-        backgroundImage: "url('/lovable-uploads/c5597a2e-bde4-4330-b9a1-66fe533ce934.png')",
+        backgroundImage: "url('/Frame 1171276950.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        position: 'relative',
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-35"></div>
       
       <div className="container-custom relative z-10">
         <div className="text-center mb-14">
