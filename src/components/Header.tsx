@@ -32,7 +32,7 @@ export default function Header() {
         
         <nav className="hidden lg:block">
           <ul className="flex space-x-8">
-            {['Home', 'About', 'Our Founder', 'Investments', 'Contact'].map((item) => (
+            {['Home', 'About', 'Our Founder', 'Investments', 'Properties'].map((item) => (
               <li key={item}>
                 <a href={`#${item.toLowerCase()}`} className="text-sm uppercase tracking-wider hover:text-korat-gold transition-colors">
                   {item}
@@ -44,7 +44,7 @@ export default function Header() {
         
         <div className="hidden lg:flex items-center space-x-4">
           <a href="#contact" className="btn-primary">
-            Get Started
+            Contact Us
           </a>
         </div>
         
@@ -69,7 +69,7 @@ export default function Header() {
             </div>
             <nav className="container-custom py-12">
               <ul className="flex flex-col space-y-6">
-                {['Home', 'About', 'Our founder', 'Investments', 'Contact'].map((item) => (
+                {['Home', 'About', 'Our founder', 'Investments', 'Properties'].map((item) => (
                   <li key={item}>
                     <a 
                       href={`#${item.toLowerCase()}`} 
@@ -86,7 +86,7 @@ export default function Header() {
                     className="btn-primary inline-block"
                     onClick={() => setMenuOpen(false)}
                   >
-                    Get Started
+                    Contact us
                   </a>
                 </li>
               </ul>

@@ -15,17 +15,6 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen bg-korat-dark text-white overflow-hidden">
-      {/* Background Video */}
-      <video
-        className="fixed top-0 left-0 w-full h-full object-cover z-0"
-        src="/8263308-uhd_3840_2160_24fps.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-      />
-      {/* Overlay for readability */}
-      <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10 pointer-events-none" />
       {/* Main Content */}
       <div className="relative z-20">
         <Header />

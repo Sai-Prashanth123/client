@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 
 export default function HeroSection() {
@@ -20,18 +19,19 @@ export default function HeroSection() {
 
   return (
     <section className="relative h-screen overflow-hidden">
-      {/* Background image with parallax effect */}
-      <div className="absolute inset-0 z-10 bg-black bg-opacity-50" />
-      <div ref={heroRef} className="absolute inset-0">
-        <div 
-          className="w-full h-full bg-cover bg-center"
-          style={{ 
-            backgroundImage: "url('/lovable-uploads/a3f9300d-0518-40a1-b6df-a7b3c9b52ba8.png')", 
-            transform: "scale(1.1)" 
-          }}
+      {/* Background Video with overlay */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <video
+          className="w-full h-full object-cover"
+          src="/8263308-uhd_3840_2160_24fps.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
         />
+        {/* Black overlay for readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-70" />
       </div>
-      
       {/* Content */}
       <div className="container-custom relative z-20 h-full flex flex-col justify-center items-center text-center">
         <div className="max-w-3xl animate-fade-in text-center">
@@ -39,7 +39,6 @@ export default function HeroSection() {
             <span className="text-white">KORAT</span>
             <span className="block text-sm text-center tracking-widest text-korat-gold mt-2">Our Founder</span>
           </h1>
-          
           <div className="mt-16 md:mt-24 text-center">
             <h2 className="heading-lg text-center">
               Prestigious Properties, Reserved for<br />
@@ -48,7 +47,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
